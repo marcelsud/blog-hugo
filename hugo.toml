@@ -1,0 +1,43 @@
+baseURL = 'https://marcelsud.github.io/blog-hugo/'
+languageCode = 'pt-br'
+title = 'Marcelo Santos (@marcelsud)'
+theme = 'hugo-coder'
+paginate = 20
+
+[params]
+  author = "Marcelo Santos"
+  info = "Engenheiro de Software com 20+ anos de experiência"
+  description = "Blog sobre arquitetura de software, Event-Driven Architecture, blockchain e composable business"
+  keywords = "blog,developer,arquitetura,eventos,software"
+  avatarURL = "images/profile-pic.jpeg"
+  
+  [[params.social]]
+    name = "Github"
+    icon = "fa-brands fa-github"
+    weight = 1
+    url = "https://github.com/marcelsud/"
+  [[params.social]]
+    name = "Twitter"
+    icon = "fa-brands fa-twitter"
+    weight = 2
+    url = "https://twitter.com/marcelsud/"
+  [[params.social]]
+    name = "LinkedIn"
+    icon = "fa-brands fa-linkedin"
+    weight = 3
+    url = "https://www.linkedin.com/in/marcelsud/"
+
+[menu]
+  [[menu.main]]
+    name = "Blog"
+    weight = 1
+    url = "posts/"
+  [[menu.main]]
+    name = "Sobre mim"
+    weight = 2
+    url = "about/"
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
